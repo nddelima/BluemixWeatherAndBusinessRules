@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>NotifyIf48hrSnowfallExceedsThroshold</name>
+  <uuid>bea4e47c-ee61-4047-bf69-23b59e8c0570</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 'The 48 hour snowfall total' is less than 8
+then 
+	set Notify to true;
+	set 'Notification Message' to "The snowfall total for the next 48 hours is expected to be " + 'The 48 hour snowfall total';
+else 
+	set Notify to false;	]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

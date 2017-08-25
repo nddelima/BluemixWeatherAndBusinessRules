@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="WeatherDataRuleApp" targetRuleProjectName="WeatherDataRuleProject">
+  <name>WeatherDataRuleApp</name>
+  <uuid>3fcfc87d-9789-49d6-8556-a9acd73bcaa2</uuid>
+  <referencedVariables variableName="DailyForecast" variableSetName="WeatherDataRuleVariables" direction="IN_OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="CurrentConditions" variableSetName="WeatherDataRuleVariables" direction="IN_OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="AlertNotification" variableSetName="WeatherDataRuleVariables" direction="IN_OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="AlmanacForecast" variableSetName="WeatherDataRuleVariables" direction="IN_OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="HourlyForecast" variableSetName="WeatherDataRuleVariables" direction="IN_OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="Notify" variableSetName="WeatherDataRuleVariables" direction="OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <referencedVariables variableName="NotificationMsg" variableSetName="WeatherDataRuleVariables" direction="OUT">
+    <variableSet href="../rules/WeatherDataRuleVariables.var#69f20d08-a1cf-4ad6-92cf-b4534f297260"/>
+  </referencedVariables>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="WeatherDataRuleApp_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../WeatherDataRuleProject#c21342e2-7108-4fe3-b43c-e85a193e711c"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

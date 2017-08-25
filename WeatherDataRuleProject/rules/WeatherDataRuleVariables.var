@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>WeatherDataRuleVariables</name>
+  <uuid>69f20d08-a1cf-4ad6-92cf-b4534f297260</uuid>
+  <variables name="DailyForecast" type="com.ibm.developerWorks.weatherdata.daily.DailyForecast" initialValue="" verbalization="The Daily Forecast"/>
+  <variables name="CurrentConditions" type="com.ibm.developerWorks.weatherdata.current.CurrentConditions" initialValue="" verbalization="The Current Conditions"/>
+  <variables name="AlertNotification" type="com.ibm.developerWorks.weatherdata.alert.AlertNotification" initialValue="" verbalization="The Alert"/>
+  <variables name="AlmanacForecast" type="com.ibm.developerWorks.weatherdata.almanac.AlmanacForecast" initialValue="" verbalization="The Almanac Forecast"/>
+  <variables name="HourlyForecast" type="com.ibm.developerWorks.weatherdata.hourly.HourlyForecast" initialValue="" verbalization="The Hourly Forecast"/>
+  <variables name="Notify" type="java.lang.Boolean" initialValue="" verbalization="Notify"/>
+  <variables name="NotificationMsg" type="java.lang.String" initialValue="" verbalization="Notification Message"/>
+  <variables name="HourlySnowfallTotal" type="java.lang.Integer" initialValue="0" verbalization="The 48 hour snowfall total"/>
+</ilog.rules.studio.model.base:VariableSet>

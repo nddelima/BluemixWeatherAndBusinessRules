@@ -1,0 +1,379 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/WeatherDataRuleProject//WeatherDataXOM"
+property uuid "59f32b46-2950-42e3-a9a5-90145e13fc57"
+package com.ibm.developerWorks.weatherdata;
+
+
+public class Metadata
+{
+    public readonly java.util.Map additionalProperties;
+    public string countrycode;
+    public java.lang.Integer expire_time_gmt;
+    public string language;
+    public java.lang.Integer latitude;
+    public string location_id;
+    public java.lang.Integer longitude;
+    public string status_code;
+    public string transaction_id;
+    public string units;
+    public string version;
+    public Metadata();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+package com.ibm.developerWorks.weatherdata.alert;
+
+
+public class Alert
+{
+    public readonly java.util.Map additionalProperties;
+    public string area_id;
+    public string area_name;
+    public string area_type;
+    public java.util.List category_item domain 0,* class com.ibm.developerWorks.weatherdata.alert.Category;
+    public string class_;
+    public string cntry_cd;
+    public string cntry_name;
+    public string detail_key;
+    public string etn;
+    public string event_desc;
+    public com.ibm.developerWorks.weatherdata.alert.Flood flood_item;
+    public string headline_text;
+    public string identifier;
+    public string issue_dt_tm_local;
+    public string issue_dt_tm_tz_abbrv;
+    public string key;
+    public java.lang.Double lat;
+    public java.lang.Double lon;
+    public string msg_type;
+    public java.lang.Integer msg_type_cd;
+    public string office_cd;
+    public string office_cntry_cd;
+    public string office_name;
+    public string office_st_cd;
+    public string phenomena;
+    public string pil;
+    public string proc_dt_tm_local;
+    public string proc_dt_tm_tz_abbrv;
+    public java.util.List response_type_item domain 0,* class com.ibm.developerWorks.weatherdata.alert.ResponseType;
+    public string severity;
+    public java.lang.Integer severity_cd;
+    public string significance;
+    public string source;
+    public string st_cd;
+    public string st_name;
+    public Alert();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class AlertNotification
+{
+    public readonly java.util.Map additionalProperties;
+    public java.util.List alerts domain 0,* class com.ibm.developerWorks.weatherdata.alert.Alert;
+    public com.ibm.developerWorks.weatherdata.Metadata metadata;
+    public AlertNotification();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class Category
+{
+    public readonly java.util.Map additionalProperties;
+    public string category;
+    public java.lang.Integer category_cd;
+    public Category();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class Flood
+{
+    public readonly java.util.Map additionalProperties;
+    public string fld_crest_dt_tm_local;
+    public string fld_crest_dt_tm_tz_abbrv;
+    public string fld_end_dt_tm_local;
+    public string fld_end_dt_tm_tz_abbrv;
+    public string fld_immediate_cause;
+    public string fld_immediate_cause_cd;
+    public string fld_location_id;
+    public string fld_location_name;
+    public string fld_record_status;
+    public string fld_record_status_cd;
+    public string fld_severity;
+    public string fld_severity_cd;
+    public string fld_start_dt_tm_local;
+    public string fld_start_dt_tm_tz_abbrv;
+    public Flood();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class ResponseType
+{
+    public readonly java.util.Map additionalProperties;
+    public string certainty;
+    public java.lang.Integer certainty_cd;
+    public string effective_dt_tm_local;
+    public string effective_dt_tm_tz_abbrv;
+    public string expire_dt_tm_local;
+    public string expire_dt_tm_tz_abbrv;
+    public java.lang.Integer expire_time_gmt;
+    public string onset_dt_tm_local;
+    public string onset_dt_tm_tz_abbrv;
+    public string response_type;
+    public java.lang.Integer response_type_cd;
+    public string urgency;
+    public java.lang.Integer urgency_cd;
+    public ResponseType();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+package com.ibm.developerWorks.weatherdata.almanac;
+
+
+public class Almanac
+{
+    public readonly java.util.Map additionalProperties;
+    public string almanac_dt;
+    public java.lang.Integer avg_hi;
+    public java.lang.Integer avg_lo;
+    public java.lang.Integer avg_precip;
+    public java.lang.Integer avg_snow;
+    public string class_;
+    public string interval;
+    public java.lang.Integer mean_temp;
+    public java.lang.Integer record_hi;
+    public java.lang.Integer record_hi_yr;
+    public java.lang.Integer record_lo;
+    public java.lang.Integer record_lo_yr;
+    public java.lang.Integer record_period;
+    public string station;
+    public string station_id;
+    public string station_name;
+    public Almanac();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class AlmanacForecast
+{
+    public readonly java.util.Map additionalProperties;
+    public java.util.List almanac_summaries domain 0,* class com.ibm.developerWorks.weatherdata.almanac.Almanac;
+    public com.ibm.developerWorks.weatherdata.Metadata metadata;
+    public AlmanacForecast();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+package com.ibm.developerWorks.weatherdata.current;
+
+
+public class CurrentConditions
+{
+    public readonly java.util.Map additionalProperties;
+    public com.ibm.developerWorks.weatherdata.Metadata metadata;
+    public com.ibm.developerWorks.weatherdata.current.Observation observation;
+    public CurrentConditions();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class Observation
+{
+    public readonly java.util.Map additionalProperties;
+    public string blunt_phrase;
+    public string class_;
+    public string clds;
+    public string day_ind;
+    public java.lang.Integer dewPt;
+    public java.lang.Integer expire_time_gmt;
+    public java.lang.Integer feels_like;
+    public java.lang.Integer gust;
+    public java.lang.Integer heat_index;
+    public java.lang.Integer icon_extd;
+    public string key;
+    public java.lang.Integer max_temp;
+    public java.lang.Integer min_temp;
+    public string obs_id;
+    public string obs_name;
+    public java.lang.Integer precip_hrly;
+    public java.lang.Integer precip_total;
+    public java.lang.Integer pressure;
+    public string pressure_desc;
+    public java.lang.Integer pressure_tend;
+    public string qualifier;
+    public string qualifier_svrty;
+    public java.lang.Integer rh;
+    public java.lang.Integer snow_hrly;
+    public java.lang.Integer temp;
+    public string terse_phrase;
+    public string uv_desc;
+    public java.lang.Integer uv_index;
+    public java.lang.Integer valid_time_gmt;
+    public java.lang.Integer vis;
+    public java.lang.Integer wc;
+    public java.lang.Integer wdir;
+    public string wdir_cardinal;
+    public java.lang.Integer wspd;
+    public java.lang.Integer wx_icon;
+    public string wx_phrase;
+    public Observation();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+package com.ibm.developerWorks.weatherdata.daily;
+
+
+public class Daily
+{
+    public string accumulation_phrase;
+    public readonly java.util.Map additionalProperties;
+    public string alt_daypart_name;
+    public java.lang.Integer clds;
+    public string day_ind;
+    public string daypart_name;
+    public java.lang.Integer expire_time_gmt;
+    public java.lang.Integer fcst_valid;
+    public string fcst_valid_local;
+    public string golf_category;
+    public java.lang.Integer golf_index;
+    public java.lang.Integer hi;
+    public java.lang.Integer icon_code;
+    public java.lang.Integer icon_extd;
+    public string long_daypart_name;
+    public string narrative;
+    public java.lang.Integer num;
+    public string phrase_12char;
+    public string phrase_22char;
+    public string phrase_32char;
+    public java.lang.Integer pop;
+    public string pop_phrase;
+    public string precip_type;
+    public java.lang.Integer qpf;
+    public string qualifier;
+    public string qualifier_code;
+    public java.lang.Integer rh;
+    public string shortcast;
+    public string snow_code;
+    public string snow_phrase;
+    public java.lang.Integer snow_qpf;
+    public java.lang.Integer snow_range;
+    public string subphrase_pt1;
+    public string subphrase_pt2;
+    public string subphrase_pt3;
+    public java.lang.Integer temp;
+    public string temp_phrase;
+    public java.lang.Integer thunder_enum;
+    public string thunder_enum_phrase;
+    public string uv_desc;
+    public java.lang.Integer uv_index;
+    public java.lang.Integer uv_index_raw;
+    public java.lang.Integer uv_warning;
+    public string vocal_key;
+    public java.lang.Integer wc;
+    public java.lang.Integer wdir;
+    public string wdir_cardinal;
+    public string wind_phrase;
+    public java.lang.Integer wspd;
+    public string wxman;
+    public Daily();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class DailyForecast
+{
+    public readonly java.util.Map additionalProperties;
+    public java.util.List forecasts domain 0,* class com.ibm.developerWorks.weatherdata.daily.Forecast;
+    public com.ibm.developerWorks.weatherdata.Metadata metadata;
+    public DailyForecast();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+public class Forecast
+{
+    public readonly java.util.Map additionalProperties;
+    public string blurb;
+    public string blurb_author;
+    public string class_;
+    public com.ibm.developerWorks.weatherdata.daily.Daily day;
+    public string dow;
+    public java.lang.Integer expire_time_gmt;
+    public java.lang.Integer fcst_valid;
+    public string fcst_valid_local;
+    public string lunar_phase;
+    public string lunar_phase_code;
+    public java.lang.Integer lunar_phase_day;
+    public java.lang.Integer max_temp;
+    public java.lang.Integer min_temp;
+    public string moonrise;
+    public string moonset;
+    public string narrative;
+    public com.ibm.developerWorks.weatherdata.daily.Daily night;
+    public java.lang.Integer num;
+    public java.lang.Integer qpf;
+    public string qualifier;
+    public string qualifier_code;
+    public string snow_code;
+    public string snow_phrase;
+    public java.lang.Integer snow_qpf;
+    public string snow_range;
+    public java.lang.Integer stormcon;
+    public string sunrise;
+    public string sunset;
+    public java.lang.Integer torcon;
+    public Forecast();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+
+package com.ibm.developerWorks.weatherdata.hourly;
+
+
+public class Forecast
+{
+    public string class_;
+    public java.lang.Integer clds;
+    public string day_ind;
+    public java.lang.Integer dewpt;
+    public string dow;
+    public java.lang.Integer expire_time_gmt;
+    public java.lang.Integer fcst_valid;
+    public string fcst_valid_local;
+    public java.lang.Integer feels_like;
+    public string golf_category;
+    public java.lang.Integer golf_index;
+    public java.lang.Integer gust;
+    public java.lang.Integer hi;
+    public java.lang.Integer icon_code;
+    public java.lang.Integer icon_extd;
+    public java.lang.Integer mslp;
+    public java.lang.Integer num;
+    public string phrase_12char;
+    public string phrase_22char;
+    public string phrase_32char;
+    public java.lang.Integer pop;
+    public string precip_type;
+    public java.lang.Integer qpf;
+    public java.lang.Integer rh;
+    public java.lang.Integer severity;
+    public java.lang.Integer snow_qpf;
+    public string subphrase_pt1;
+    public string subphrase_pt2;
+    public string subphrase_pt3;
+    public java.lang.Integer temp;
+    public string uv_desc;
+    public java.lang.Integer uv_index;
+    public java.lang.Integer uv_index_raw;
+    public java.lang.Integer uv_warning;
+    public string vis;
+    public java.lang.Integer wc;
+    public java.lang.Integer wdir;
+    public string wdir_cardinal;
+    public java.lang.Integer wspd;
+    public string wxman;
+    public Forecast();
+}
+
+public class HourlyForecast
+{
+    public readonly java.util.Map additionalProperties;
+    public java.util.List forecasts domain 0,* class com.ibm.developerWorks.weatherdata.hourly.Forecast;
+    public com.ibm.developerWorks.weatherdata.Metadata metadata;
+    public HourlyForecast();
+    public void setAdditionalProperty(string arg1, object arg2);
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Calculate48hrSnowfallTotal</name>
+  <uuid>41bfd31e-7be1-4a92-ba6a-e08da852e26b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then	
+for each Hourly Prediction  in the forecasts of 'The Hourly Forecast' :
+	- set 'The 48 hour snowfall total' to 'The 48 hour snowfall total' + the snow qpf of this Hourly Prediction ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
