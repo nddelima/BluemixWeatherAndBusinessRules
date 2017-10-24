@@ -17,10 +17,6 @@
       </RuleTask>
       <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="Hourly Forecast" Ordering="Literal">
         <InitialActions Language="irl"><![CDATA[System.err.println(DailyForecast);]]></InitialActions>
-        <RuleList>
-          <Rule Uuid="41bfd31e-7be1-4a92-ba6a-e08da852e26b"/>
-          <Rule Uuid="bea4e47c-ee61-4047-bf69-23b59e8c0570"/>
-        </RuleList>
       </RuleTask>
       <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="Current Forecast" Ordering="Default">
         <InitialActions Language="irl"><![CDATA[System.err.println(DailyForecast);]]></InitialActions>
