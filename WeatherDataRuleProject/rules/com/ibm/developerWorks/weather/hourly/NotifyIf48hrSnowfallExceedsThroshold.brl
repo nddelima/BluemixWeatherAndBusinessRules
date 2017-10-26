@@ -6,7 +6,9 @@
   <definition><![CDATA[if 'The 48 hour snowfall total' is less than 8
 then 
 	set Notify to true;
-	set 'Notification Message' to "The snowfall total for the next 48 hours is expected to be " + 'The 48 hour snowfall total';
+	set 'Notification Message' to "The snowfall total for the next 48 hours is expected to be " + 
+	'The 48 hour snowfall total' + ". Services will be cancelled.";
 else 
-	set Notify to false;	]]></definition>
+	set Notify to false;
+	set 'Notification Message' to "Services are operational.";]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
